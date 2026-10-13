@@ -120,10 +120,10 @@
   .ti .info .t{font-size:.78rem;letter-spacing:2px;color:var(--malva);text-transform:uppercase}
 
   /* ============ DRESS CODE ============ */
-  .dress{background:var(--morado-oscuro);color:#fff;text-align:center}
+  .dress{background:var(--salvia);color:#fff;text-align:center}
   .dress h2{color:#fff;font-size:2.3rem}
-  .dress .code{font-family:'Great Vibes';font-size:3rem;color:var(--lavanda);margin:6px 0 14px}
-  .dress .avoid{margin-top:16px;font-size:.74rem;letter-spacing:2px;text-transform:uppercase;opacity:.92;color:var(--lavanda)}
+  .dress .code{font-family:'Great Vibes';font-size:3rem;color:#F3F7EC;margin:6px 0 14px}
+  .dress .avoid{margin-top:16px;font-size:.74rem;letter-spacing:2px;text-transform:uppercase;opacity:.95;color:#EDF2E3}
   .palette{display:flex;justify-content:center;gap:14px;margin-top:26px}
   .sw{width:46px;height:46px;border-radius:50%;border:2px solid rgba(255,255,255,.5)}
 
@@ -147,7 +147,7 @@
 
   /* ============ REGALOS ============ */
   .gift{background:var(--lavanda-claro);text-align:center}
-  .gift .ic{font-size:2.6rem;color:var(--morado)}
+  .gift .ic{color:var(--morado);line-height:0;margin-top:10px}
   .gift p{font-family:'Cormorant Garamond';font-size:1.4rem;font-style:italic;color:var(--morado-oscuro);max-width:560px;margin:14px auto 0}
   .qr-card{background:#fff;border-radius:18px;padding:22px;max-width:260px;margin:30px auto 0;box-shadow:0 14px 34px rgba(94,75,139,.15);border:1px solid #efe8f8}
   .qr-card img{width:100%;border-radius:10px;display:block}
@@ -183,10 +183,10 @@
   @keyframes fadehint{0%,70%{opacity:1;transform:none}100%{opacity:0;transform:translateX(10px);visibility:hidden}}
 
   /* ============ FOOTER ============ */
-  footer{background:var(--morado-oscuro);color:#fff;text-align:center;padding:60px 22px}
-  footer .names{font-family:'Great Vibes';font-size:3.2rem;color:var(--lavanda)}
-  footer .heart{font-size:1.2rem;margin:14px 0}
-  footer small{opacity:.6;font-size:.7rem;letter-spacing:1px}
+  footer{background:var(--tostado-claro);color:var(--texto);text-align:center;padding:60px 22px}
+  footer .names{font-family:'Great Vibes';font-size:3.2rem;color:var(--morado-oscuro)}
+  footer .heart{line-height:0;margin:16px 0}
+  footer small{opacity:.8;font-size:.7rem;letter-spacing:1px;color:var(--morado)}
 </style>
 </head>
 <body>
@@ -209,8 +209,7 @@
 <section class="intro center">
   <div class="wrap reveal">
     <div class="divider"><span>❧</span></div>
-    <!-- EDITAR: frase o versículo -->
-    <p>"Las muchas aguas no pueden apagar el amor, ni los ríos pueden ahogarlo."</p>
+    <p>"Las aguas embravecidas no pueden extinguir el amor, ni pueden los ríos llevárselo con la corriente. Si un hombre ofreciera todas las riquezas de su casa a cambio de amor, estas serían del todo despreciadas."</p>
     <span class="ref">Cantar de los Cantares 8:7</span>
   </div>
 </section>
@@ -237,8 +236,8 @@
       <div class="story-txt">
         <span class="script" style="font-size:1.8rem;color:var(--morado)">Nuestra historia</span>
         <h2>Comenzó un amor<br>para toda la vida</h2>
-        <!-- EDITAR: su historia -->
-        <p>Desde el primer instante supimos que estábamos destinados a caminar juntos. Hoy, con el corazón lleno de alegría, queremos compartir contigo el día en que uniremos nuestras vidas para siempre.</p>
+        <p>Aunque el camino para encontrarnos tuvo sus retos, hoy vemos la mano de Jehová en nuestra historia. Descubrimos el uno en el otro el apoyo para mantenernos firmes cuando vengan dificultades.</p>
+        <p>Hacer funcionar nuestra relación ha sido un proceso de amor y esfuerzo constante. Con gran honor y alegría, les compartimos que ¡nos casamos! Su presencia hará este momento aún más especial para nosotros.</p>
       </div>
     </div>
   </div>
@@ -365,7 +364,10 @@
 <!-- ============ REGALOS ============ -->
 <section class="gift">
   <div class="wrap reveal">
-    <div class="ic">🎁</div>
+    <span class="script" style="font-size:1.9rem;color:var(--morado)">Regalos</span>
+    <div class="ic">
+      <svg class="licon" viewBox="0 0 48 48" style="width:54px;height:54px"><rect x="8" y="21" width="32" height="19" rx="1.5"/><rect x="6" y="15" width="36" height="6" rx="1.5"/><path d="M24 15v25"/><path d="M24 15c-2-7-11-6-11-1 0 4 6 4 11 1z"/><path d="M24 15c2-7 11-6 11-1 0 4-6 4-11 1z"/></svg>
+    </div>
     <!-- EDITAR: mensaje de regalos -->
     <p>"Tu presencia es nuestro regalo más preciado. Si deseas tener un detalle con nosotros, puedes hacerlo escaneando el siguiente código QR."</p>
     <div class="qr-card">
@@ -374,7 +376,7 @@
         <span>📱</span>
         <small>Aquí irá el código QR<br>(guárdalo como <b>qr.jpg</b> en la carpeta images)</small>
       </div>
-      <div class="qr-label">Banco Ganadero · Omar Reyes 💜</div>
+      <div class="qr-label">Banco Ganadero · Omar Reyes</div>
     </div>
   </div>
 </section>
@@ -386,8 +388,9 @@
     <h2>¿Nos acompañas?</h2>
     <p>Tu confirmación es muy importante para nosotros. Por favor confírmanos si podrás asistir.</p>
     <div class="deadline">Fecha límite: 21 de octubre de 2026</div>
-    <a class="btn-wa" href="https://wa.me/59167782713?text=¡Hola!%20Confirmo%20mi%20asistencia%20a%20la%20boda%20de%20Omar%20y%20Lorena%20💜" target="_blank">
-      <span>💬</span> Confirmar por WhatsApp
+    <a class="btn-wa" href="https://wa.me/59167782713?text=¡Hola!%20Confirmo%20mi%20asistencia%20a%20la%20boda%20de%20Omar%20y%20Lorena" target="_blank">
+      <svg class="licon" viewBox="0 0 48 48" style="width:22px;height:22px;stroke:#fff"><path d="M10 38l2.5-7a14 14 0 1 1 5.5 5z"/><path d="M18 20c0 6 4 10 10 10"/></svg>
+      Confirmar por WhatsApp
     </a>
   </div>
 </section>
@@ -395,7 +398,7 @@
 <!-- ============ FOOTER ============ -->
 <footer>
   <div class="names">Omar &amp; Lorena</div>
-  <div class="heart">💜</div>
+  <div class="heart"><svg class="licon" viewBox="0 0 48 48" style="width:30px;height:30px;color:var(--morado)"><path d="M24 40S8 29 8 18.5A7.5 7.5 0 0 1 24 15a7.5 7.5 0 0 1 16 3.5C40 29 24 40 24 40z"/></svg></div>
   <!-- EDITAR: fecha -->
   <small>LUNES 30 DE NOVIEMBRE DE 2026 · SANTA CRUZ, BOLIVIA</small>
 </footer>
